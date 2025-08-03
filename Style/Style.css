@@ -1,0 +1,81 @@
+/* Reset and center the content */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e1e1e;
+  background-image: repeating-radial-gradient(circle at center, #2a2a2a 0px, #1e1e1e 1px, transparent 2px);
+  background-size: 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main calculator box */
+.calculator {
+  background: #2d2d2d;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  width: 320px;
+}
+
+/* Display screen for showing input/output */
+.display {
+  background: #1a1a2e;
+  color: #00ffcc;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+
+/* Button container in grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* General button style */
+.btn {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 0 transparent;
+}
+
+.btn:hover {
+  background: #666;
+  box-shadow: 0 0 10px #00ffcc; /* Light glow on hover */
+}
+
+/* Equal button */
+.equal {
+  background: #3399ff;
+  color: black;
+  grid-row: span 2;
+  transition: transform 0.1s ease;
+}
+
+/* Equal button click animation */
+.equal:active {
+  transform: scale(0.95);
+}
+
+/* Zero button spans 2 columns */
+.zero {
+  grid-column: span 2;
+}

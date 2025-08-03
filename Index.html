@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <!-- Link to external CSS file for calculator styling -->
+    <link rel="stylesheet" href="./Style/Style.css" />
+  </head>
+  <body>
+    <!-- Main calculator container -->
+    <div class="calculator">
+      <!-- Display screen for showing input and result -->
+      <div class="display" id="display">0</div>
+
+      <!-- Buttons container -->
+      <div class="buttons">
+        <!-- Control and operator buttons -->
+        <button class="btn" data-value="C">C</button>
+        <!-- Clear button -->
+        <button class="btn" data-value="/">÷</button>
+        <!-- Division -->
+        <button class="btn" data-value="*">×</button>
+        <!-- Multiplication -->
+        <button class="btn" data-value="←">←</button>
+        <!-- Backspace -->
+
+        <!-- Number and operator buttons -->
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn" data-value="-">−</button>
+        <!-- Subtraction -->
+
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn" data-value="+">+</button>
+        <!-- Addition -->
+
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn equal" data-value="=">=</button>
+        <!-- Equal / Result -->
+
+        <!-- Zero and decimal point -->
+        <button class="btn zero" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+      </div>
+    </div>
+
+    <!-- Link to external JavaScript file for calculator functionality -->
+    <script src="./JS/Script.js"></script>
+  </body>
+</html>
